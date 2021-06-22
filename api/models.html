@@ -14,7 +14,7 @@
     
     
       
-        <title>/rooms - Holisy</title>
+        <title>/models - Holisy</title>
       
     
     
@@ -60,11 +60,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#success-responses" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -91,7 +86,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              /rooms
+              /models
             
           </span>
         </div>
@@ -207,47 +202,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          /rooms
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="rooms.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="rooms.html" class="md-nav__link">
         /rooms
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#success-responses" class="md-nav__link">
-    Success Responses
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -315,11 +274,19 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="models.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="models.html" class="md-nav__link md-nav__link--active">
         /models
       </a>
+      
     </li>
   
 
@@ -427,84 +394,86 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#success-responses" class="md-nav__link">
-    Success Responses
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>/rooms</h1>
+                  <h1>/models</h1>
                 
-                <p><strong>URL</strong> : <code>/rooms/</code></p>
-<p><strong>Method</strong> : <code>GET</code></p>
-<p><strong>Auth required</strong> : No</p>
-<p><strong>Permissions required</strong> : None</p>
-<p><strong>Data constraints</strong> : <code>{}</code></p>
-<h2 id="success-responses">Success Responses</h2>
-<p><strong>Code</strong> : <code>200 OK</code></p>
-<p><strong>Content</strong> : <code>{[]}</code></p>
-<pre><code class="language-json">{
-   &quot;Rooms&quot;: [
-    {
-        &quot;room_number&quot;: 1,
-        &quot;name&quot;: &quot;Economy room&quot;,
-        &quot;beds_number&quot;: 2,
-        &quot;day_cost&quot;: 10,
-        &quot;room_class&quot;: &quot;эконом&quot;,
-        &quot;photo&quot;: &quot;http://127.0.0.1:8000/media/room1.jpg&quot;,
-        &quot;description&quot;: &quot;Отель удобно расположен в Василеостровском районе Санкт-Петербурга, менее чем в 1 км от стадиона «Петровский» и в 1,4 км от Зимнего дворца и Государственного Эрмитажа. Расстояние до Исаакиевского собора и Дворцовой площади составляет около 1,5 км, а до храма Спаса на Крови — 2,2 км. Стойка регистрации отеля работает круглосуточно. Гостям предоставляется бесплатный Wi-Fi и услуга доставки еды и напитков в номер. По запросу организуется трансфер.\r\nНомера оснащены кондиционером и телевизором с плоским экраном и кабельными каналами. В числе удобств шкаф для одежды, чайник, душ и фен.&quot;
-    },
-    {
-        &quot;room_number&quot;: 2,
-        &quot;name&quot;: &quot;Luxury room&quot;,
-        &quot;beds_number&quot;: 4,
-        &quot;day_cost&quot;: 20,
-        &quot;room_class&quot;: &quot;luxury&quot;,
-        &quot;photo&quot;: &quot;http://127.0.0.1:8000/media/room2.jpg&quot;,
-        &quot;description&quot;: &quot;Отель удобно расположен в Василеостровском районе Санкт-Петербурга, менее чем в 1 км от стадиона «Петровский» и в 1,4 км от Зимнего дворца и Государственного Эрмитажа. Расстояние до Исаакиевского собора и Дворцовой площади составляет около 1,5 км, а до храма Спаса на Крови — 2,2 км. Стойка регистрации отеля работает круглосуточно. Гостям предоставляется бесплатный Wi-Fi и услуга доставки еды и напитков в номер. По запросу организуется трансфер.\r\nНомера оснащены кондиционером и телевизором с плоским экраном и кабельными каналами. В числе удобств шкаф для одежды, чайник, душ и фен.&quot;
-    },
-    {
-        &quot;room_number&quot;: 3,
-        &quot;name&quot;: &quot;President room&quot;,
-        &quot;beds_number&quot;: 2,
-        &quot;day_cost&quot;: 100,
-        &quot;room_class&quot;: &quot;president&quot;,
-        &quot;photo&quot;: &quot;http://127.0.0.1:8000/media/room3.jpg&quot;,
-        &quot;description&quot;: &quot;Отель удобно расположен в Василеостровском районе Санкт-Петербурга, менее чем в 1 км от стадиона «Петровский» и в 1,4 км от Зимнего дворца и Государственного Эрмитажа. Расстояние до Исаакиевского собора и Дворцовой площади составляет около 1,5 км, а до храма Спаса на Крови — 2,2 км. Стойка регистрации отеля работает круглосуточно. Гостям предоставляется бесплатный Wi-Fi и услуга доставки еды и напитков в номер. По запросу организуется трансфер.\r\nНомера оснащены кондиционером и телевизором с плоским экраном и кабельными каналами. В числе удобств шкаф для одежды, чайник, душ и фен.&quot;
-    }
-]
-}
+                <pre><code class="language-buildoutcfg">class User(AbstractUser):
+    &quot;&quot;&quot;Пользователь&quot;&quot;&quot;
+    user_id = models.IntegerField(primary_key=True, auto_created=True)
+    birth_date = models.DateField(null=True, blank=True)
+    post = models.CharField(max_length=32, null=True, blank=True)
+    salary = models.IntegerField(null=True, blank=True)
+    phone = models.CharField(max_length=12)
+
+
+class Room(models.Model):
+    &quot;&quot;&quot;Комната&quot;&quot;&quot;
+    room_number = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=32, verbose_name='Название комнаты', default='room')
+    beds_number = models.IntegerField(null=True, blank=True, verbose_name='Количество мест')
+    day_cost = models.IntegerField(null=True, blank=True, verbose_name='Стоимость за сутки')
+    room_class = models.CharField(max_length=32, verbose_name='Класс комнаты')
+    photo = models.ImageField(verbose_name='Изображение', null=True, blank=True)
+    description = models.TextField(verbose_name='Описание комнаты')
+
+
+class Service(models.Model):
+    &quot;&quot;&quot;Услуги&quot;&quot;&quot;
+    service_id = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=32, verbose_name='Название услуги')
+    description = models.TextField(verbose_name='Описание услуги')
+    cost = models.IntegerField(null=True, blank=True, verbose_name='Стоимость')
+    employee_id = models.ForeignKey(User, on_delete=models.CASCADE, null=True,
+                                    related_name='topic_employee_id', verbose_name='Сотрудник')
+
+
+class Booking(models.Model):
+    &quot;&quot;&quot;Бронирование&quot;&quot;&quot;
+    status_types = (
+        ('p', 'Ожидает оплаты'),
+        ('v', 'На подтверждении'),
+        ('l', 'В процессе'),
+        ('c', 'Завершен')
+    )
+    booking_id = models.IntegerField(primary_key=True, auto_created=True)
+    client_id = models.ForeignKey(User, on_delete=models.CASCADE, null=True, related_name='topic_client_id',
+                                  verbose_name='Гость')
+    room_number = models.ForeignKey(Room, on_delete=models.CASCADE, null=True, related_name='topic_room_number',
+                                    verbose_name='Номер комнаты')
+    arrival_date = models.DateField(null=True, verbose_name='Дата заезда')
+    departure_date = models.DateField(null=True, verbose_name='Дата выезда')
+    person_count = models.IntegerField(default=1, verbose_name='Количество жильцов')
+    result_cost = models.IntegerField(null=True, blank=True, default=0, verbose_name='Счет')
+    status = models.CharField(max_length=1, choices=status_types, default='v', verbose_name='Статус')
+    services = models.ManyToManyField('Service', related_name='booking_services', verbose_name='Заказанные услуги',
+                                      null=True, blank=True)
+
+
+class Application(models.Model):
+    &quot;&quot;&quot;Заявки&quot;&quot;&quot;
+    status_types = (
+        ('p', 'В ожидании'),
+        ('l', 'Выполняется'),
+        ('c', 'Выполнен')
+    )
+    application_id = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=32, verbose_name='Название заявки')
+    description = models.TextField(verbose_name='Описание заявки')
+    status = models.CharField(max_length=1, choices=status_types, verbose_name='Статус')
+    employee_id = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True,
+                                    related_name='topic_manager_id', verbose_name='Сотрудник')
+    booking_id = models.ForeignKey(Booking, on_delete=models.CASCADE, null=True, related_name='topic_booking_id',
+                                   verbose_name='Номер брони')
 </code></pre>
+<figure>
+  <img src="https://sun9-12.userapi.com/impg/w5kcJQ0Lygn8nAsVZs8PIPzFYFrZZMs4I7tIWw/odBJ3sJ04Dg.jpg?size=1271x765&quality=96&sign=bc20f5c1567e2abdb485ff53d5f3b1bb&type=album" width="500" />
+  <figcaption>Database scheme</figcaption>
+</figure>
                 
               
               
@@ -524,7 +493,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+        <a href="booking_delete.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: /booking/delete" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -533,20 +502,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              /booking/delete
             </div>
           </div>
         </a>
       
       
         
-        <a href="clients.html" class="md-footer__link md-footer__link--next" aria-label="Next: /clients" rel="next">
+        <a href="../front/login.html" class="md-footer__link md-footer__link--next" aria-label="Next: /login" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              /clients
+              /login
             </div>
           </div>
           <div class="md-footer__button md-icon">
