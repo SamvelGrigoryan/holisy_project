@@ -60,6 +60,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -283,9 +288,44 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          /models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="models.html" class="md-nav__link md-nav__link--active">
         /models
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Модель данных
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Инфологическая модель базы данных
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -394,6 +434,43 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Модель данных
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Инфологическая модель базы данных
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -402,7 +479,8 @@
                 
                   <h1>/models</h1>
                 
-                <pre><code class="language-buildoutcfg">class User(AbstractUser):
+                <h2 id="_1">Модель данных</h2>
+<pre><code class="language-buildoutcfg">class User(AbstractUser):
     &quot;&quot;&quot;Пользователь&quot;&quot;&quot;
     user_id = models.IntegerField(primary_key=True, auto_created=True)
     birth_date = models.DateField(null=True, blank=True)
@@ -470,6 +548,7 @@ class Application(models.Model):
     booking_id = models.ForeignKey(Booking, on_delete=models.CASCADE, null=True, related_name='topic_booking_id',
                                    verbose_name='Номер брони')
 </code></pre>
+<h2 id="_2">Инфологическая модель базы данных</h2>
 <figure>
   <img src="https://sun9-12.userapi.com/impg/w5kcJQ0Lygn8nAsVZs8PIPzFYFrZZMs4I7tIWw/odBJ3sJ04Dg.jpg?size=1271x765&quality=96&sign=bc20f5c1567e2abdb485ff53d5f3b1bb&type=album" width="500" />
   <figcaption>Database scheme</figcaption>
