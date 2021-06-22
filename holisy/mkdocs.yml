@@ -8,6 +8,7 @@ nav:
     - "/booking/create": api/booking_create.md
     - "/booking/update": api/booking_update.md
     - "/booking/delete": api/booking_delete.md
+    - "/models": api/models.md
   - Front:
     - "/login": front/login.md
     - "/signup": front/signup.md

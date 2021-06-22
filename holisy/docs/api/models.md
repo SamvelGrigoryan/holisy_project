@@ -1,8 +1,5 @@
-from django.conf import settings
-from django.db import models
-from django.contrib.auth.models import AbstractUser
-
-
+##Модель данных
+```buildoutcfg
 class User(AbstractUser):
     """Пользователь"""
     user_id = models.IntegerField(primary_key=True, auto_created=True)
@@ -70,3 +67,9 @@ class Application(models.Model):
                                     related_name='topic_manager_id', verbose_name='Сотрудник')
     booking_id = models.ForeignKey(Booking, on_delete=models.CASCADE, null=True, related_name='topic_booking_id',
                                    verbose_name='Номер брони')
+```
+##Инфологическая модель базы данных
+<figure>
+  <img src="https://sun9-12.userapi.com/impg/w5kcJQ0Lygn8nAsVZs8PIPzFYFrZZMs4I7tIWw/odBJ3sJ04Dg.jpg?size=1271x765&quality=96&sign=bc20f5c1567e2abdb485ff53d5f3b1bb&type=album" width="500" />
+  <figcaption>Database scheme</figcaption>
+</figure>
